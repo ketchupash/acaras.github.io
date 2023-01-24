@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Minecraft Server Name Generator</title>
+	<style>   	
+		body {
+  		background-image: url('https://evvahnotc3p.exactdn.com/wp-content/uploads/2020/04/EVM3jwsUEAI-MXR.jpg');
+	}
+
+      myDiv {
+        display: inline-block;
+      }
+      button {
+        font-size: 1.5em;
+        padding: 10px 20px;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class= "myDiv"><h1><center>Minecraft Server Name Generator</center></h1></div>
+    <div class= "button"><button id="generate-btn"><center>Generate</center></button></div>
+    <p style= "text-align:center" id="word"></p>
+    
+    <script>
+      // Array of words to choose from
+      var prefix = ["Badlands", "Windswept", "Azure", "Plateau", "Dripstone", "Quartz", "Geode", "Sapphire", "Topaz", "Serpent", "Opal", "Moonstone", "Lapis", "Obsidian", "Shipwrecked", "Taiga", "Warped", "Mangrove", "Emerald", "Amethyst", "Onyx", "Honeycomb", "Cosmos", "Galaxy", "Andromeda", "Mercury", "Venus", "Mars", "Jupiter", "Saturn", "Neptune", "Pluto", "Nectar", "Quantum", "Apollo", "Indigo", "Meridian", "Solstice", "Alphabet"];
+	  var suffix = ["Craft", "MC", "SMP"];
+      
+      // Get the generate button
+      var generateBtn = document.getElementById("generate-btn");
+      
+      // Get the word element
+      var wordEl = document.getElementById("word");
+      
+      // Add a click event listener to the button
+      generateBtn.addEventListener("click", function() {
+        // Generate a random number between 0 and the last index of the words array
+        var randomNumPre = Math.floor(Math.random() * prefix.length);
+		var randomNumSuf = Math.floor(Math.random() * suffix.length);
+        
+        // Set the text content of the word element to the randomly selected word
+        wordEl.textContent = prefix[randomNumPre] + " " + suffix[randomNumSuf];
+      });
+    </script>
+  </body>
+</html>
+
