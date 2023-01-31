@@ -27,7 +27,7 @@
     <script>
       // Array of words to choose from
       var prefix = ["Badlands", "Windswept", "Azure", "Plateau", "Dripstone", "Quartz", "Geode", "Sapphire", "Topaz", "Serpent", "Opal", "Moonstone", "Lapis", "Obsidian", "Shipwrecked", "Taiga", "Warped", "Mangrove", "Emerald", "Amethyst", "Onyx", "Honeycomb", "Cosmos", "Galaxy", "Andromeda", "Mercury", "Venus", "Mars", "Jupiter", "Saturn", "Neptune", "Pluto", "Nectar", "Quantum", "Apollo", "Indigo", "Meridian", "Solstice", "Alphabet"];
-	  var suffix = ["Craft", "MC", "SMP"];
+	  var suffix = ["SMP"];
       
       // Get the generate button
       var generateBtn = document.getElementById("generate-btn");
